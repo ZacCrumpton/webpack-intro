@@ -1,0 +1,29 @@
+{
+  "name": "webpack-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/javascripts/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacCrumpton/webpack-intro.git"
+  },
+  "keywords": [],
+  "author": "Zachary Crumpton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZacCrumpton/webpack-intro/issues"
+  },
+  "homepage": "https://github.com/ZacCrumpton/webpack-intro#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
+}
